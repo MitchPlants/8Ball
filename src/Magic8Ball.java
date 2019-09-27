@@ -10,7 +10,10 @@ public class Magic8Ball {
         FirstAnswer = Keyboard.nextLine();
         System.out.println("Now a number in between 1-100");
         x = Keyboard.nextInt();
-         if(x>0 && x < 11){
+        if (x>-1000000000 && x<0){
+            System.out.println("No, try again");
+        }
+         else if(x>0 && x < 11){
             System.out.println("Impossible");
         }
         else if(x>11 && x<21){
@@ -40,6 +43,9 @@ public class Magic8Ball {
         else if(x>91 && x<101){
             System.out.println("The gods will make it happen");
         }
+         else if(x>101 && x<1000000000){
+             System.out.println("No, try again");
+         }
 
 
 
